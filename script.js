@@ -1,5 +1,5 @@
 var atual = new Date()
-var dia = atual.getDay()
+var dia = atual.getDate()
 var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro','Outubro', 'Novembro', 'Dezembro']
 var mes = meses[atual.getMonth()]
 var ano = atual.getFullYear()
