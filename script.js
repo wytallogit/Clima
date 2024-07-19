@@ -1,3 +1,9 @@
+const apiKey = "91d8315d13950cafcab7cec0349e6f20";
+const apiContryURL = "https://countryflagsapi.com/png/"
+
+const city = document.getElementById("cidade");
+
+
 var atual = new Date()
 var dia = atual.getDate()
 var meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro','Outubro', 'Novembro', 'Dezembro']
@@ -24,5 +30,7 @@ function carregar() {
     } else if (horas <= 23) {
         imagem.src = 'imagens/noite-pc.png'
         document.body.style.background = '#40019A'
-    }
+        setTimeout('carregar()', 1000)
+    } 
+    
 }
