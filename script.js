@@ -27,10 +27,11 @@ function carregar() {
     } else if (horas <= 17) {
         imagem.src = 'imagens/dia-sol-pc'
         document.body.style.background = '#7FE0E9'
-    } else if (horas <= 23) {
-        imagem.src = 'imagens/noite-pc.png'
+    } else if (horas <= 24) {
+        imagem.src = "imagens/noite-pc.png"
         document.body.style.background = '#40019A'
-        setTimeout('carregar()', 1000)
-    } 
+    } else {
+        imagem.remove();
+    }
     
 }
